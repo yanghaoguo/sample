@@ -5730,9 +5730,14 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+.navbar-inverse {
+  background-color: #3c3e42; }
+
 /* universal */
 body {
-  padding: 60ox; }
+  padding-top: 60px; }
+  body h1 {
+    margin-top: 10px; }
 
 section {
   overflow: auto; }
@@ -5741,8 +5746,7 @@ textarea {
   resize: vertical; }
 
 .jumbotron {
-  -webkit-text-emphasis: center;
-  text-emphasis: center; }
+  text-align: center; }
 
 /* typography */
 h1, h2, h3, h4, h5, h6 {
@@ -5755,8 +5759,8 @@ h1 {
   text-align: center; }
 
 h2 {
-  font: 3em;
-  letter-spacing: -2px;
+  font-size: 1.2em;
+  letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
@@ -5806,5 +5810,48 @@ footer {
   footer .slogon {
     font-size: 13px;
     font-weight: bold; }
+
+/* sidebar */
+aside section {
+  padding: 10px 0;
+  margin-top: 20px; }
+  aside section:first-child {
+    border: 0;
+    padding-top: 0; }
+  aside section span {
+    display: block;
+    margin-bottom: 3px;
+    line-height: 1; }
+
+section.user_info {
+  padding-bottom: 10px;
+  margin-top: 20px;
+  text-align: center; }
+  section.user_info .gravatar {
+    float: none;
+    max-width: 70px; }
+  section.user_info h1 {
+    font-size: 1.4em;
+    letter-spacing: -1px;
+    margin-bottom: 3px;
+    margin-top: 15px; }
+
+.gravatar {
+  float: left;
+  margin-right: 10px;
+  max-width: 50px;
+  border-radius: 50%; }
+
+/* forms */
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px; }
+
+input {
+  height: auto !important; }
+
+.panel {
+  margin-top: 50px; }
 
 /*# sourceMappingURL=app.css.map */
