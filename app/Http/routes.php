@@ -18,6 +18,12 @@ get('/about', 'StaticPagesController@about')->name('about');
 get('signup', 'UsersController@create')->name('signup');
 resource('users', 'UsersController');
 
+get('/users/{id}/followings', 'UsersController@followings')->name('users.followings');
+get('/users/{id}/followers', 'UsersController@followers')->name('users.followers');
+
+post('/users/followers/{id}', 'FollowersController@store')->name('followers.store');
+delete('/users/followers/{id}', 'FollowersController@destroy')->name('followers.destroy');
+
 
 get('login', 'SessionsController@create')->name('login');
 post('login', 'SessionsController@store')->name('login');
